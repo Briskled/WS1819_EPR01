@@ -1,0 +1,41 @@
+Infos zum Drucken:
+	https://www.rbi.informatik.uni-frankfurt.de/RBI/de/faq/drucken
+
+WinSCP, um die Dateien draufzuschieben
+	https://winscp.net/eng/download.php
+
+SSH-Befehl zum Einloggen (Windows 10, neuste version):
+	ssh -X [benutzername]@rbi.cs.uni-frankfurt.de
+Beispiel:
+	ssh -X peter@rbi.cs.uni-frankfurt.de
+
+Putty zum Drucken
+	https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+
+
+
+Vorgang:
+Ihr wollt die Datei "HalloWelt.pdf" drucken
+ 1. Öffnet WinSCP
+ 	1.1 Gebt als Rechnername      rbi.cs.uni-frankfurt.de     ein
+	1.2 Port muss 22 sein (sollte standardmäßig der Fall sein)
+	1.3 Benutzername muss euer RBI-Name sein
+	1.4 Passwort euer RBI-Passwort
+ 2. Zieht die Datei per Drag and drop in den Ordner wo sie hin soll
+ 3. Baut eine SSH-Verbindung auf. Das geht entweder mit Putty oder der Kommandozeile
+	3.1 Version 1: Putty:
+		3.1.1 Putty öffnen
+		3.1.2 Gleichen Rechnernamen, Benutzernamen und Passwort eingeben wie bei WinSCP auch
+	3.2 Version 2: Windows Kommandozeile
+		3.2.1 Windowstaste + R drücken
+		3.2.2 cmd   eingeben
+		3.2.3 Alternativ einfach nach Eingabeaufforderung suchen
+		3.2.4 Eingeben:    ssh -X [benutzername]@rbi.cs.uni-frankfurt.de
+ 4. Jetzt drucken:
+		3.1.3 Navigiert in den Ordner, wo eure Datei liegt.
+		3.1.4 ihr betretet einen Ordner mit dem Kommando    	cd ORDNERNAME
+		3.1.5 ihr kommt einen Order zurück mit dem Kommando	cd ..
+		3.1.6 ihr kommt an den Anfang einfach mit 		cd
+		3.1.7 mit dem Kommando		ls	Seht ihr die Dateien und Unterordner des aktuellen Ordners
+						ls -la zeigt genauere Infos		
+		3.1.8 Wenn ihr eure Datei gefunden habt gebt ihr	lpr DATEINAME 	ein. Also z.B. lpr HalloWelt.pdf

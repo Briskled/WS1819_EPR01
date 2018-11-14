@@ -1,0 +1,55 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{enumitem}
+\title{Aufgaben zweite Woche}
+\author{Felix Lapp}
+\begin{document}
+	\maketitle
+	\section*{Wiederholung 1: Schreibe einen Algorithmus}
+	Schreibe ein Programm, das eine Zahl vom Benutzer entgegennimmt. Nennen wir sie $n$. Anschließend soll eine Zahl $Z$ berechnet werden. Mit folgender Formel:
+	\begin{align*}
+		Z=\frac{n^2-n}{2}
+	\end{align*}
+	Das Ergebnis $Z$ soll ausgegeben werden.
+	
+	\section*{Wiederholung 2: Auswertungsreihenfolge}
+	Werte folgenden Ausdruck per Hand aus:\\
+	
+	\begin{center}
+		\texttt{(23 - (5 + 2**2 * 2)) * 5 // (5**2) - 4**0}
+	\end{center}
+	Du kannst das Ergebnis prüfen, indem du den ganzen Ausdruck in IDLE eingibst. Beispiel für eine Auswertung: Es soll \texttt{5**(4-2) + 1} ausgewertet werden. Das kann man so schreiben:\\[5mm]
+	\texttt{5**(4-2) + 1}\\
+	\texttt{5**(2) + 1}\\
+	\texttt{25 + 1}\\
+	\texttt{26}
+	
+	\section*{Aufgabe 1: Datentypen}
+	\begin{enumerate}[label=\alph*)]
+		\item Finde heraus, welchen Datentypen die \texttt{input}-Funktion zurückgibt. Dir werden \texttt{type(...)} und \texttt{help(...)} dabei helfen!\\
+		Tipp: \texttt{builtin\_function\_or\_method} ist NICHT die richtige Antwort.
+		\item Finde heraus, wie man prüfen kann, ob es sich bei einer Eingabe um eine ganze Zahl handelt.\\
+		\item Was ist der Datentyp \texttt{Boolean}? Was können die Schlüsselwörter \texttt{and}, \texttt{or} und \texttt{not}?
+		\item Wie lässt sich prüfen, ob die Werte von zwei Variablen identisch sind?
+	\end{enumerate}
+
+	\section*{Aufgabe 2: Vergleiche}
+	Schreibe ein Programm, welches vom Benutzer zwei Eingaben erwartet. Diese Eingaben sollen verglichen werden. Das Ergebnis des Vergleichs soll in einer Variable gespeichert werden. Gebe diese Variable mit \texttt{print} aus.\\
+	Kannst du das Programm so modifizieren, dass der Benutzer drei Eingaben zu tätigen hat und alle drei verglichen werden?
+	
+	\section*{Live-Programming: if, else, elif}
+	Diese Aufgabe kannst du machen wenn du möchtest. Der Tutor wird sie selbst live für alle am Beamer lösen.\\
+	Schreibe ein Programm, welches zwei Eingaben eines Benutzers erwartet. Beide sollen ganze Zahlen sein. Es soll eine Fehlermeldung ausgegeben werden, wenn dies nicht der Fall ist. Anschließend soll ausgegeben werden:
+	\begin{itemize}
+		\item \texttt{Erste Zahl ist größer}, wenn die erste Zahl größer ist
+		\item \texttt{Gleich und Gleich gesellt sich gern}, wenn die Zahlen gleich sind
+		\item \texttt{Zweite Zahl ist größer}, wenn die zweite Zahl größer ist.
+	\end{itemize}
+	
+	
+\end{document}
