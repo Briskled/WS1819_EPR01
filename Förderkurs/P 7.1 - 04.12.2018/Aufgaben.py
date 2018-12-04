@@ -7,11 +7,14 @@
 # Saboteur ist 0.5 Meter groß und hat einen Kampfwert von 11
 # Staubsauger 3000 ist 0.3 Meter groß und hat einen Kampfwert von 1
 
+KEY_HEIGHT = "größe"
+KEY_NAME = "name"
+KEY_VALUE = "kampfwert"
 
 
 # Aufgabe 1:
 # Plane, wie du diese Informationen am geschicktesten in einem
-# Python-Modul implementierts
+# Python-Modul implementiert
 
 # Aufgabe 2:
 # Setze deine Planung um
