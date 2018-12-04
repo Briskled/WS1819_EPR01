@@ -58,27 +58,28 @@ def main():
               KEY_HEIGHT: 0.3}
 
 
-
+     # Aufgabe 5
      # Now set a value for every robot
-     robo1[KEY_VALUE] = ask_for_value("Magnetron")
+     robo1[KEY_VALUE] = ask_for_value(robo1[KEY_NAME])
      robo2[KEY_VALUE] = ask_for_value("Robostampf")
      robo3[KEY_VALUE] = ask_for_value("Saboteur")
      robo4[KEY_VALUE] = ask_for_value("Staubsauger 3000")
 
-
+     # Aufgabe 3
      if robo1[KEY_VALUE] > robo3[KEY_VALUE]:
           print("MAGNETRON GEWINNT GEGEN SABOTEUR")
      else:
           print("SABOTEUR GEWINNT GEGEN MAGNETRON")
 
 
-
+     # Aufgabe 4
      if robo2[KEY_VALUE] > robo4[KEY_VALUE]:
           print("ROBOSTAMPF GEWINNT GEGEN STAUBSAUGER 3000")
      else:
           print("STAUBSAUGER 3000 GEWINNT GEGEN ROBOSTAMPF")
 
 
+     # Aufgabe 7
      # save every robot in a list so we can iterate through hem
      robos = [robo1, robo2, robo3, robo4]
 

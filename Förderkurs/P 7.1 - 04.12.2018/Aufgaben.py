@@ -18,6 +18,13 @@ KEY_VALUE = "kampfwert"
 
 # Aufgabe 2:
 # Setze deine Planung um
+def who_wins(robo1, robo2):
+     if robo1[KEY_VALUE] > robo2[KEY_VALUE]:
+          print(robo1[KEY_NAME] + " gewinnt")
+     elif robo1[KEY_VALUE] == robo2[KEY_VALUE]:
+          print("Unentschieden")
+     else:
+          print(robo2[KEY_NAME] + " gewinnt")
 
 # Aufgabe 3:
 # Zuerst treten Magnetron und Saboteur gegeneinander an.
