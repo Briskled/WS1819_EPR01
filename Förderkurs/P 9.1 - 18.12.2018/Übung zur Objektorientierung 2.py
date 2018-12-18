@@ -17,3 +17,8 @@
 # Aufgabe 5:
 # Implementiere eine Klassenfunktion, die zwei Objekte der Klasse Essen erwartet
 # und die Differenz der Geschmackwerte ausgibt
+
+# Aufgabe 6:
+# Modifiziere den Setter von Geschmack so, dass keine Werte erlaubt sind, die kleiner als 0 oder
+# größer als 10 sin.
+# Werte kleiner 0 sollen automatisch auf 0 gesetzt werden. Werte größer 10 automatisch auf 10
