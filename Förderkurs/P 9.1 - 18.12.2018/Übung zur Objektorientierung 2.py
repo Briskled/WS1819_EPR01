@@ -1,3 +1,65 @@
+"""Krasses Denglisch"""
+
+class Essen:
+     """Class representing Food"""
+
+     def __init__(self):
+          """Constructor"""
+          
+          self.__kalorien = 0
+          self.__geschmack = 0
+
+     def get_kalorien(self):
+          """Getter for attribute kalorien"""
+          return self.__kalorien
+
+     def set_kalorien(self, kalorien):
+          """Setter for attribute kalorien"""
+          self.__kalorien = kalorien
+
+     def get_geschmack(self):
+          """Getter for attribute geschmack"""
+          return self.__geschmack
+
+     def set_geschmack(self, geschmack):
+          """Setter for attribute geschmack"""
+          if geschmack < 0:
+               self.__geschmack = 0
+          elif geschmack > 10:
+               self.__geschmack = 10
+          else:
+               self.__geschmack = geschmack
+
+     def unterschied_geschmack(essen1, essen2):
+          print("Geschmack von Essen1:", essen1.get_geschmack())
+          print("Geschmack von Essen2:", essen2.get_geschmack())
+          unterschied = essen1.get_geschmack() - essen2.get_geschmack()
+          print("Differenz:", unterschied)
+
+
+class Wurst(Essen):
+     """"""
+     def __init__(self):
+          """"""
+          Essen.__init__(self)
+          self.set_kalorien(600)
+
+class Brokkoli(Essen):
+
+     def __init__(self):
+          Essen.__init__(self)
+          self.set_geschmack(0)
+     
+
+
+b = Brokkoli()
+b.set_kalorien(50)
+
+w = Wurst()
+w.set_geschmack(3)
+
+Essen.unterschied_geschmack(b, w)
+
 # Aufgabe 1:
 # Implementiere die Klasse >Essen<
 # Sie speichert zwei private Attribute:
@@ -20,5 +82,5 @@
 
 # Aufgabe 6:
 # Modifiziere den Setter von Geschmack so, dass keine Werte erlaubt sind, die kleiner als 0 oder
-# größer als 10 sin.
+# größer als 10 sind.
 # Werte kleiner 0 sollen automatisch auf 0 gesetzt werden. Werte größer 10 automatisch auf 10
