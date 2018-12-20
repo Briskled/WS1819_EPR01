@@ -36,6 +36,9 @@ class Plant:
           if self.__height >= 5:
                self.is_blooming = True
 
+
+
+
 # Aufgabe 2:
 # Füge ein Attribut >height< hinzu, welches angibt,
 # wie groß die Pflanze ist.
@@ -58,9 +61,19 @@ plant1.grow()
 print("Pflanze 1 ist jetzt", plant1.get_height(), "cm groß und blüht:", plant1.is_blooming)
 plant1.set_height(20)
 print("Pflanze 1 ist jetzt", plant1.get_height(), "cm groß und blüht:", plant1.is_blooming)
-
+print("Pflanze 2 ist jetzt", plant2.get_height(), "cm groß und blüht:", plant2.is_blooming)
 # Aufgabe 5:
 # Lasse mit print die Höhen beider Pflanzenobjekte ausgeben
 
 
 # Methode = Funktion
+
+
+
+
+
+
+
+
+
+

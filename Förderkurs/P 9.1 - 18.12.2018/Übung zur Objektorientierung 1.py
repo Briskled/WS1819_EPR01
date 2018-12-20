@@ -42,6 +42,7 @@ class Panda(Animal):
 
 
 
+
 objekt1 = Animal("Lilly")
 objekt2 = Panda()
 objekt2.set_strength(42)
@@ -92,3 +93,6 @@ print(objekt2.get_name())
 # Panda "erbt" alle Eigenschaften (Attribute und Methoden) von Animal
 # Panda erweitert die bereits vorhandenen Eigenschaften um ein Attribute cuteness
 # und um die Methode get_cuteness
+
+
+

@@ -1,7 +1,7 @@
 """Krasses Denglisch"""
 
 class Essen:
-     """Class representing Food"""
+     """Abstract Class representing Food"""
 
      def __init__(self):
           """Constructor"""
