@@ -5,6 +5,36 @@
 # Was ist der Unterschied zwischen Funktion und Methode?
 # Schreibe eine Klasse >Animal< mit den Attributen >name< und >type<
 
+class Animal:
+     def __init__(self):
+          self.name = "PLACEHOLDER"
+          self.type = 0
+
+
+def sum_first_n(n):
+     flag = 1
+     sum = 0
+     while True:
+          if flag <= n:
+               sum += flag
+               flag += 1
+          else:
+               return sum
+
+
+def sum_first_n2(n):
+     sum_n = 0
+     while n > 0:
+          sum_n += n
+          n -= 1
+     return sum_n
+
+
+def sum_first_n3(n):
+     sum_n = 0
+     for i in range(n+1):
+          sum_n += i
+     return sum_n
 
 # Aufgabe 1:
 # Schreibe eine Funktion sum_firs_n(n), die die Summe der ersten n ganzen Zahlen
@@ -15,10 +45,16 @@
 # Aufgabe 2 (vom Tutor):
 # Schreibe eine REKURSIVE Funktion, die das gleiche tut wie sum_first_n(n)
 
+def sum_rek(n):
+     if n == 1:
+          return 1
+     else:
+          return n + sum_rek(n-1)
+
 
 # Aufgabe 3:
 # Schreibe eine rekursive Funktion, die n! (Fakultät) berechnet.
-# Wenn n=6 ist, soll sie also 1*2*3*4*5*6 berechnen
+# Wenn n=6 ist, soll sie also 6*5*4*3*2*1 berechnen
 
 
 # Aufgabe 4 (vom Tutor):
