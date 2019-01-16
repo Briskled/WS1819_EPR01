@@ -56,6 +56,11 @@ def sum_rek(n):
 # Schreibe eine rekursive Funktion, die n! (Fakultät) berechnet.
 # Wenn n=6 ist, soll sie also 6*5*4*3*2*1 berechnen
 
+def fak(n):
+     if n == 1:
+          return 1
+     else:
+          return n * fak(n-1)
 
 # Aufgabe 4 (vom Tutor):
 # gegeben sei folgende rekursive Gleichung:
@@ -64,12 +69,22 @@ def sum_rek(n):
 # Schreibe eine rekursive Funktion, die diese Gleichung implementiert
 
 
+def task_4(n):
+     if n == 0:
+          return 0
+     return 2*task_4(n-1) + 1
+
+
 # Aufgabe 5:
 # gegeben sei folgende rekursive Gleichung:
 #   x(0) = 6
 #   x(n) = x(n-1) + 3*x(n-1)
 # Schreibe eine rekursive Funktion, die diese Gleichung implementiert
 
+def task_5(n):
+     if n == 0:
+          return 6
+     return task_5(n-1) + 3*task_5(n-1)
 
 # Aufgabe 6:
 # Die Berechnung für die n-te Fibonacci Zahl sieht so aus:
@@ -78,8 +93,25 @@ def sum_rek(n):
 #   x(n) = x(n-1) + x(n-2)
 # Schreibe eine rekursive Funktion, die diese Gleichung implementiert
 
+def fib(n):
+     if n == 1 or n == 2:
+          return 1
+     return fib(n-1) + fib(n-2)
 
 # Aufgabe 7:
 # Berechne mit deinem Programm die 4-te, 5-te, 10., 20. 30., 35. und 40. Fibonaccizahl.
 # Was fällt dir auf?
 # Warum ist das so?
+
+
+
+# Freiwillige Hausaufgabe:
+# Schreibe eine Funktion, die die n-te fibonnaci-Zahl berechnet, ohne dass es zu Laufzeitproblemen kommt
+# Am besten mit fib(40) testen
+# Muss nicht rekursiv sein (kann aber ;) )
+
+
+
+
+
+
