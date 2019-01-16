@@ -20,12 +20,19 @@ def fib_iter(n):
     """A iterative implementation for calculating the n-th fibonacci number
     There will be no runtime issues."""
     
-    a = 0
-    b = 1
+    b = 0
+    a = 1
     for i in range(n):
-        a = a + b
+        b = a + b
         a, b = b, a
-    return a
+    return b
+
+
+
+
+
+
+
 
 
 
