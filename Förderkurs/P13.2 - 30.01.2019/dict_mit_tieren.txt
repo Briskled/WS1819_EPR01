@@ -1,0 +1,1 @@
+{'Hund': 'Dog', 'Fliege': 'Fly', 'Tisch': 'Table', 'Stuhl': 'Chair', 'Einhorn': 'Unicorn', 'Affe': 'Monkey', 'Faultier': 'Sloth'}
