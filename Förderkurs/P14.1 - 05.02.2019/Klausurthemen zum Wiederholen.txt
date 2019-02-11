@@ -1,0 +1,14 @@
+Pythonanalyse
+Auswertung
+Datentypen
+Wörterbücher
+Funktionen
+Objektorientierung
+Auswertunngsreihenfolge
+Slicing
+Mathe-Notation zu Python
+ - Rekursiv
+ - Iterativ
+Andersrum auch
+Python im Kopf ausführen
+UML-Diagramme
